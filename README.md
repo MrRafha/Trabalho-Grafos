@@ -1,10 +1,10 @@
-#Projeto de Rotas entre Cidades do Piauí com Grafos em C
+# Projeto de Rotas entre Cidades do Piauí com Grafos em C
 
 Este projeto modela o percurso entre cidades do estado do **Piauí**, simulando uma jornada do viajante de **Corrente até Parnaíba** por meio de um **grafo direcionado**. Ele foi desenvolvido com foco **educacional**, para reforçar os conceitos de grafos, busca em profundidade (DFS), caminhos e estrutura de dados em C.
 
 ---
 
-##Objetivos
+## Objetivos
 
 O programa tem como objetivo:
 
@@ -19,7 +19,7 @@ O programa tem como objetivo:
 
 ## Lógica por Trás do Código
 
-###Representação do Grafo
+### Representação do Grafo
 O grafo é representado por uma **lista de adjacência**. Cada índice do vetor principal corresponde a uma cidade, e aponta para uma lista encadeada que contém os destinos acessíveis diretamente a partir dessa cidade (ou seja, suas conexões).
 
 Isso foi escolhido porque:
@@ -94,7 +94,7 @@ O grafo foi construído com as seguintes conexões direcionadas:
 
 ---
 
-##Algoritmos Utilizados
+## Algoritmos Utilizados
 
 ### DFS Recursiva (Busca em Profundidade)
 
@@ -102,13 +102,13 @@ Usada para:
 - Encontrar todos os caminhos possíveis entre Corrente e Parnaíba;
 - Determinar o caminho mais curto (menor profundidade) e o mais longo (maior profundidade).
 
-###Backtracking
+### Backtracking
 
 Permite "voltar atrás" nas decisões e explorar todos os caminhos possíveis. Isso é feito desmarcando as cidades visitadas ao retornar de chamadas recursivas.
 
 ---
 
-##Saída do Programa
+## Saída do Programa
 
 1. Lista de conexões entre as cidades;
 2. Todos os caminhos possíveis de Corrente até Parnaíba;
@@ -116,8 +116,4 @@ Permite "voltar atrás" nas decisões e explorar todos os caminhos possíveis. I
    - Total de caminhos encontrados;
    - Caminho mais curto;
    - Caminho mais longo.
-
----
-
-##Exemplo de saída
 
