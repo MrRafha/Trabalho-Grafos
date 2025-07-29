@@ -56,4 +56,3 @@ O grafo foi construído com as seguintes conexões direcionadas:
 
 Foi utilizada uma **lista de adjacência**, onde cada vértice possui uma lista ligada apontando para seus vizinhos. Esta estrutura é ideal para grafos esparsos e permite inserções e percursos eficientes.
 
-```
