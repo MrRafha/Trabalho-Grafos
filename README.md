@@ -1,10 +1,10 @@
-# 🗺️ Projeto de Rotas entre Cidades do Piauí com Grafos em C
+# 🗺 Projeto de Rotas entre Cidades do Piauí com Grafos em C
 
 Este projeto modela o percurso entre cidades do estado do **Piauí**, simulando uma jornada do viajante de **Corrente até Parnaíba** por meio de um **grafo direcionado**. Ele foi desenvolvido com foco **educacional**, para reforçar os conceitos de grafos, busca em profundidade (DFS), caminhos e estrutura de dados em C.
 
 ---
 
-## 📌 Objetivos
+##  Objetivos
 
 O programa tem como objetivo:
 
@@ -17,9 +17,9 @@ O programa tem como objetivo:
 
 ---
 
-## 🧠 Lógica por Trás do Código
+##  Lógica por Trás do Código
 
-### 🏗️ Representação do Grafo
+### 🏗 Representação do Grafo
 O grafo é representado por uma **lista de adjacência**. Cada índice do vetor principal corresponde a uma cidade, e aponta para uma lista encadeada que contém os destinos acessíveis diretamente a partir dessa cidade (ou seja, suas conexões).
 
 Isso foi escolhido porque:
@@ -27,7 +27,7 @@ Isso foi escolhido porque:
 - Ela permite percorrer rapidamente todas as conexões de uma cidade;
 - É simples de implementar em C com ponteiros e listas encadeadas.
 
-### 🧭 Exploração de Caminhos: DFS + Backtracking
+###  Exploração de Caminhos: DFS + Backtracking
 
 A lógica principal de exploração é feita com um algoritmo de **Busca em Profundidade (DFS)** recursiva, que visita todas as rotas possíveis partindo da cidade de origem (Corrente) até o destino (Parnaíba).
 
@@ -48,7 +48,7 @@ Essa abordagem garante:
 - Armazenamento do **menor e maior caminho** com base no número de passos (arestas);
 - Evita ciclos ou repetições indevidas, respeitando a natureza direcionada do grafo.
 
-### 🔄 Armazenamento Temporário dos Caminhos
+### Armazenamento Temporário dos Caminhos
 Durante a execução da DFS:
 
 - Um vetor `caminhoAtual[]` guarda o caminho atual em construção;
@@ -57,7 +57,7 @@ Durante a execução da DFS:
 
 ---
 
-## 🏙️ Representação das Cidades
+## Representação das Cidades
 
 As cidades foram codificadas por índices de 0 a 9:
 
@@ -94,21 +94,21 @@ O grafo foi construído com as seguintes conexões direcionadas:
 
 ---
 
-## 🔍 Algoritmos Utilizados
+##  Algoritmos Utilizados
 
-### ✅ DFS Recursiva (Busca em Profundidade)
+### DFS Recursiva (Busca em Profundidade)
 
 Usada para:
 - Encontrar todos os caminhos possíveis entre Corrente e Parnaíba;
 - Determinar o caminho mais curto (menor profundidade) e o mais longo (maior profundidade).
 
-### ✅ Backtracking
+### Backtracking
 
 Permite "voltar atrás" nas decisões e explorar todos os caminhos possíveis. Isso é feito desmarcando as cidades visitadas ao retornar de chamadas recursivas.
 
 ---
 
-## 📤 Saída do Programa
+## Saída do Programa
 
 1. Lista de conexões entre as cidades;
 2. Todos os caminhos possíveis de Corrente até Parnaíba;
